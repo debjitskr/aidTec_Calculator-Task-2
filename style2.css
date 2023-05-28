@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(30deg, #93a5cf, #e4efe9);
+}
+
+.container{
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px 20px 20px;
+    background: #abb8c9;
+}
+
+.display{
+    height: 80px;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 35px; 
+    text-align: right;
+    color: #000e1a;
+    border-radius: 6px;
+    background: rgb(191, 213, 221);
+    pointer-events: none;
+}
+
+.buttons{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #e4efe9;
+    box-shadow: 0 5px 10px #dcd9e0;
+}
+
+.buttons button:active{
+    transform: scale(0.95);
+}
+
+.operator{
+    color: #7f37d6;
+}
